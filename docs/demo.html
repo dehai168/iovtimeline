@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>iovTimeLine演示页面</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./dist/iovtimeline.min.js"></script>
+</head>
+
+<body onload="initTimeLine()">
+    <canvas id="app" style="width: 1200px; height: 150px;"></canvas>
+    <script>
+        let iovTimeLine = null;
+        let initTimeLine = function () {
+            let node = document.getElementById('app');
+            iovTimeLine = new IovTimeLine.Multiple('app', {});
+        };
+    </script>
+</body>
+
+</html>

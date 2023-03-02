@@ -1,0 +1,41 @@
+{
+  "name": "iovtimeline",
+  "version": "0.0.1",
+  "description": "a timeline base on canvas",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --watch",
+    "build": "node build/build.js",
+    "dev": "webpack-dev-server --open",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dehai168/iovtimeline.git"
+  },
+  "keywords": [
+    "timeline",
+    "time",
+    "line",
+    "record",
+    "canvas"
+  ],
+  "author": "dehai",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/dehai168/iovtimeline/issues"
+  },
+  "homepage": "https://github.com/dehai168/iovtimeline#readme",
+  "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-latest": "^6.24.1",
+    "css-loader": "^2.1.0",
+    "file-loader": "^3.0.1",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.23.1",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.0"
+  }
+}

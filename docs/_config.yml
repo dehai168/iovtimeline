@@ -1,0 +1,8 @@
+title: 来自北方的iovTimeLine项目主页
+description: 基于canvas开发,支持多通道录像时间轴展示,当前时间点播放,拖动播放以及时间轴放大缩小,以满足行业应用。
+show_downloads: true
+theme: jekyll-theme-slate
+author: level
+timezone: Asia/Shanghai
+locale: zh_CN
+
