@@ -10,12 +10,19 @@
 </head>
 
 <body onload="initTimeLine()">
-    <canvas id="app" style="width: 1200px; height: 150px;"></canvas>
+    <div id="myTimeLine"></div>
     <script>
         let iovTimeLine = null;
         let initTimeLine = function () {
-            let node = document.getElementById('app');
-            iovTimeLine = new IovTimeLine.Multiple('app', {});
+            iovTimeLine = new IovTimeLine.Multiple('myTimeLine', {
+                width: 1024,
+                height: 200,
+                timeCb: function (time) {
+                    console.log(time);
+                }
+            });
+            iovTimeLine.setTimes([[{ st: '08:00:00', et: '18:00:00' }, { st: '20:00:00', et: '21:00:00' }], [{ st: '06:00:00', et: '08:00:00' }, { st: '16:00:00', et: '18:00:00', sp: 1 }], [{ st: '08:00:00', et: '18:00:00' }], [{ st: '08:00:00', et: '18:00:00', sp: 1 }]])
+            iovTimeLine.setAsyncTimes(['08:03:00', '06:10:00', '08:20:00', '08:40:00']);
         };
     </script>
 </body>
