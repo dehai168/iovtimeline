@@ -266,6 +266,7 @@ export class Multiple {
     var yOffset = this.isSync ? (lineHeight - this.options.timeLineRectHeight) / 2 : 2;
     for (let index = 0; index < this.asyncTimes.length; index++) {
       const timeSpan = this.asyncTimes[index];
+      if (timeSpan.length === 0) continue;
       const x1 = this._time2px(timeSpan);
       const y1 = this.options.topHeight + index * lineHeight + yOffset;
       const y2 = y1 + this.options.timeLineRectHeight;
